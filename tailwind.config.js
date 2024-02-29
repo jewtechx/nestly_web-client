@@ -5,7 +5,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        
+        primary:"#1C76FD",
+        white:'#FFFFFF',
+        white_accent:'#EBEEFF',
+        overlay:'#0000004D'
       },
       fontFamily: {
         manrope: ["Manrope"],

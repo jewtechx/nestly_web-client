@@ -6,3 +6,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.container {
+    @apply mx-auto w-[90%]
+}
+
+.button-primary{
+    @apply p-[12px] rounded-[12px] bg-primary font-[700] text-white_accent leading-[19.36px]
+}
