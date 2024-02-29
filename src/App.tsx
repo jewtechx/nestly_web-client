@@ -1,10 +1,11 @@
 import './App.css'
+import AppNavigator from './services/context'
 
 function App() {
 
   return (
     <>
-     <h1>Project to start soon</h1>
+      <AppNavigator />
     </>
   )
 }
