@@ -4,11 +4,16 @@ export default {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontSize:{
+        h5:"20px"
+      },
       colors: {
         primary:"#1C76FD",
         white:'#FFFFFF',
         white_accent:'#EBEEFF',
-        overlay:'#0000004D'
+        overlay:'#0000004D',
+        black:'#000000',
+        tertiary_text:"#000000B2"
       },
       fontFamily: {
         manrope: ["Manrope"],
@@ -24,5 +29,5 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

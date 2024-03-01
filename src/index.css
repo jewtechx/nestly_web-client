@@ -14,3 +14,15 @@
 .button-primary{
     @apply p-[12px] rounded-[12px] bg-primary font-[700] text-white_accent leading-[19.36px]
 }
+
+.heading-h5{
+    @apply font-[700] text-h5 leading-[24.2px] text-black
+}
+
+.paragraph-large{
+    @apply font-[400] text-[16px] text-center leading-[19.36px] text-tertiary_text
+}
+
+.paragraph-small{
+    @apply font-[400] text-[12px] leading-[14.52px] text-center 
+}
