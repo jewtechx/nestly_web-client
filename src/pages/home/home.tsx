@@ -5,6 +5,7 @@ import classNames from '../../helpers/classNames';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setApartments } from '../../redux/apartment/apartmentSlice';
+import AvailableApartments from './available-apartments';
 
 export default function Home() {
 
@@ -57,7 +58,7 @@ export default function Home() {
 
       {/* overlay */}
       <p className="sr-only">hero section</p>
-      <div className={classNames("w-full h-[772px] bg-[url(/assets/bg.jpg)] bg-no-repeat bg-cover -z-4")}>
+      <div className={classNames("w-full h-[980px] sm:h-[772px] bg-[url(/assets/bg.jpg)] bg-no-repeat bg-cover -z-4")}>
        <div className={classNames("bg-overlay w-full h-full flex flex-col justify-center items-center")}>
         
         <p className="sr-only">content of hero section</p>
@@ -129,11 +130,14 @@ export default function Home() {
             <Link 
             to={"/explore"} 
             onClick={search}
-            className={classNames("w-full text-center bg-primary mt-10 rounded-[12px] text-white font-[600] p-2 md:p-0 md:pt-1 mb-2")}>Search</Link>
+            className={classNames("w-full text-center bg-primary -mt-10 sm:mt-10 rounded-[12px] text-white font-[600] p-2 md:p-0 md:pt-1 mb-2")}>Search</Link>
           </div>
         </div>
       </div>        
       </div>
+
+    {/* available apartments */}
+    <AvailableApartments />
     </div>
   )
 }

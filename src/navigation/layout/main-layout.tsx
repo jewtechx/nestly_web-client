@@ -40,7 +40,7 @@ export default function Layout() {
           </div>
 
           {/* navigation for small screen */}
-          <div className={classNames(`sm:hidden transition duration-1000 ease-out flex flex-col w-full h-contain rounded-[5px] -z-10 py-2 absolute right-0 bg-white justify-center items-center ${isOpen ? "top-0" : "-top-1/2"}`)}>
+          <div className={classNames(`sm:hidden transition duration-1000 ease-out flex flex-col w-full h-contain rounded-[5px] -z-10 py-2 absolute right-0 bg-white justify-center items-center ${isOpen ? "top-0" : "-top-80"}`)}>
             {navigation.map((nav) => {
               return (
                 <>
